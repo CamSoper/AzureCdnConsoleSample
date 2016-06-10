@@ -12,7 +12,7 @@ namespace CdnConsoleTutorial
         //Tenant app constants
         private const string clientID = "<YOUR CLIENT ID>";
         private const string clientSecret = "<YOUR CLIENT AUTHENTICATION KEY>";
-        private const string authority = "https://login.microsoftonline.com/<YOUR TENANT ID>";
+        private const string authority = "https://login.microsoftonline.com/<YOUR TENANT ID>/<YOUR TENANT DOMAIN NAME>";
 
         //Application constants
         private const string subscriptionId = "<YOUR SUBSCRIPTION ID>";
