@@ -106,7 +106,7 @@ namespace CdnConsoleTutorial
             foreach (Profile p in profileList)
             {
                 Console.WriteLine("CDN profile {0}", p.Name);
-                if (p.Name == profileName)
+                if (p.Name.Equals(profileName, StringComparison.OrdinalIgnoreCase))
                 {
                     // Hey, that's the name of the CDN profile we want to create!
                     profileAlreadyExists = true;
@@ -118,7 +118,7 @@ namespace CdnConsoleTutorial
                 foreach (Endpoint e in endpointList)
                 {
                     Console.WriteLine("-{0} ({1})", e.Name, e.HostName);
-                    if (e.Name == endpointName)
+                    if (e.Name.Equals(endpointName, StringComparison.OrdinalIgnoreCase))
                     {
                         // The unique endpoint name already exists.
                         endpointAlreadyExists = true;
